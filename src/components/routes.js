@@ -1,4 +1,5 @@
-var { Route, DefaultRoute } = require("react-router"),
+var React = require("react"),
+    { Route, DefaultRoute } = require("react-router"),
     { OneColumnLayout } = require("./layouts"),
     { SearchPage } = require("./dna");
 
