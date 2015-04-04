@@ -12,7 +12,7 @@
     "start-debug": "supervisor --debug -w src/server,src/lib -e js,ejs,json src/server/boot.js",
     "preinstall": "npm install -g grunt-cli",
     "postinstall": "npm run build",
-    "build": "grunt build"
+    "build": "npm install; grunt build"
   },
   "dependencies": {
     "babel": "^4.7.16",
