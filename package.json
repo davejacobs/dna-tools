@@ -10,9 +10,8 @@
   "scripts": {
     "start": "supervisor -w src/server,src/lib -e js,ejs,json src/server/boot.js",
     "start-debug": "supervisor --debug -w src/server,src/lib -e js,ejs,json src/server/boot.js",
-    "preinstall": "npm install -g grunt-cli",
-    "postinstall": "npm run build",
-    "build": "npm install; grunt build"
+    // "preinstall": "npm install -g grunt-cli",
+    "postinstall": "grunt build"
   },
   "dependencies": {
     "babel": "^4.7.16",
@@ -36,9 +35,8 @@
     "underscore": "~1.6.0",
     "url": "^0.10.3",
     "xmldom": "^0.1.19",
-    "xpath": "0.0.9"
-  },
-  "devDependencies": {
+    "xpath": "0.0.9",
+
     "babel-loader": "^5.0.0",
     "expand-home-dir": "0.0.2",
     "foreman": "^1.3.0",
@@ -56,5 +54,7 @@
     "supervisor": "^0.6.0",
     "webpack": "~1.7.3",
     "webpack-dev-server": "^1.7.0"
+  },
+  "devDependencies": {
   }
 }
