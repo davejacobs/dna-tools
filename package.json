@@ -31,6 +31,7 @@
     "react-widgets": "^2.0.1",
     "superagent": "~0.18.2",
     "underscore": "~1.6.0",
+    "url": "^0.10.3",
     "xmldom": "^0.1.19",
     "xpath": "0.0.9"
   },
