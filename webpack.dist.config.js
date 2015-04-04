@@ -12,7 +12,7 @@ var webpack = require("webpack"),
 module.exports = {
   output: {
     publicPatch: "assets/",
-    path: "package/public/javascripts/",
+    path: "src/client/public/javascripts/",
     filename: "[hash].boot.js"
   },
 

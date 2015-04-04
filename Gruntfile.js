@@ -10,6 +10,17 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: pkgConfig,
 
+    clean: {
+      dist: {
+        files: [{
+          dot: true,
+          src: [
+            "<%= pkg.package %>/"
+          ]
+        }]
+      }
+    },
+
     webpack: {
       options: webpackDistConfig,
 
@@ -77,10 +88,15 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.registerTask("store-hash", function(target) {
+    fs.writeFileSync("hash.json",
+                     grunt.config.getRaw("webpackStats").hash);
+  });
+
   grunt.registerTask("serve", ["sass:dev", "watch"]);
 
   // Need to add back for webpack dist
-  // grunt.registerTask("build", ["clean", "sass", "autoprefixer", "webpack", "store-hash", "copy"]);
+  grunt.registerTask("build", ["clean", "sass", "autoprefixer", "webpack", "store-hash"/*, "copy"*/]);
   // grunt.registerTask("deploy", ["build", "ssh_deploy:production", "clean"]);
 };
 

@@ -39,7 +39,7 @@ if (app.get("env") === "development") {
           ecstatic({ root: path.resolve(__dirname, "../client/public") }));
 } else {
   app.use("/assets",
-          ecstatic({ root: path.resolve(__dirname, "../../public") }));
+          ecstatic({ root: path.resolve(__dirname, "../client/public") }));
 }
 
 app.use("/api", apiRoutes);
