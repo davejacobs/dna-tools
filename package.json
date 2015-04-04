@@ -36,6 +36,7 @@
     "xpath": "0.0.9"
   },
   "devDependencies": {
+    "babel-loader": "^5.0.0",
     "expand-home-dir": "0.0.2",
     "foreman": "^1.3.0",
     "fs": "0.0.2",
