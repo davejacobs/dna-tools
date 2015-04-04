@@ -1,5 +1,7 @@
 ## DNA Tools ##
 
+![DNA Tools](https://raw.githubusercontent.com/davejacobs/dna-tools/master/src/client/public/images/dna-gel.jpg)
+
 An experimental set of tools for cloning and analyzing DNA sequences.
 
 ### Running ###
