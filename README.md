@@ -1,6 +1,6 @@
 ## DNA Tools ##
 
-![DNA Tools](https://raw.githubusercontent.com/davejacobs/dna-tools/master/src/client/public/images/dna-gel.jpg)
+<img src="https://raw.githubusercontent.com/davejacobs/dna-tools/master/src/client/public/images/dna-gel.jpg" alt="DNA Tools" width="300">
 
 An experimental set of tools for cloning and analyzing DNA sequences.
 
