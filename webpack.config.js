@@ -25,7 +25,7 @@ module.exports = {
   devtool: false,
 
   entry: [
-    "./src/client/boot.jsx",
+    "./src/client/boot.js",
     // "webpack/hot/dev-server",
     "webpack-dev-server/client?http://localhost:8081"
   ],
@@ -65,7 +65,7 @@ module.exports = {
     }],
 
     loaders: [{
-      test: /\.jsx$/,
+      test: /\.js[x]?$/,
       loader: "babel",
       exclude: /node_modules/
     }, {

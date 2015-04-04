@@ -1,5 +1,5 @@
-var Constants = require("./constants.jsx"),
-    ClientData = require("./client/data.jsx");
+var Constants = require("./constants.js"),
+    ClientData = require("./client/data.js");
 
 module.exports = {
   loadDna(id) {

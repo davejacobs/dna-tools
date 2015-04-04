@@ -2,8 +2,8 @@ var path = require("path"),
     fs = require("fs"),
     React = require("react"),
     Router = require("react-router"),
-    routes = require("../../components/routes.jsx"),
-    Actions = require("../../actions.jsx"),
+    routes = require("../../components/routes.js"),
+    Actions = require("../../actions.js"),
     hashPath = path.resolve(__dirname, "../../../hash.json"),
     hash; 
 

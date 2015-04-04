@@ -9,8 +9,8 @@ var express = require("express"),
     // favicon = require("serve-favicon"),
     logger = require("morgan"),
     bodyParser = require("body-parser"),
-    renderRoutes = require("./routes/render.jsx"),
-    apiRoutes = require("./routes/api.jsx");
+    renderRoutes = require("./routes/render.js"),
+    apiRoutes = require("./routes/api.js");
 
 var app = express();
 

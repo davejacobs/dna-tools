@@ -1,6 +1,6 @@
 var React = require("react"),
     { Route, DefaultRoute } = require("react-router"),
-    App = require("./app.jsx");
+    App = require("./app.js");
 
 module.exports = (
   <Route handler={App.OneColumnLayout} path="/">

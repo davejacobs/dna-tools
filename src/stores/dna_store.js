@@ -1,7 +1,7 @@
 var _ = require("underscore"),
     Fluxxor = require("fluxxor"),
-    Constants = require("../constants.jsx"),
-    Helpers = require("../lib/helpers.jsx");
+    Constants = require("../constants.js"),
+    Helpers = require("../lib/helpers.js");
 
 module.exports = Fluxxor.createStore({
   initialize() {

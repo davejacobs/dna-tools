@@ -2,10 +2,10 @@ require("babel/register");
 
 var React = require("react"),
     Router = require("react-router"),
-    routes = require("../components/routes.jsx"),
+    routes = require("../components/routes.js"),
     Fluxxor = require("fluxxor"),
-    DnaStore = require("../stores/dna_store.jsx"),
-    Actions = require("../actions.jsx");
+    DnaStore = require("../stores/dna_store.js"),
+    Actions = require("../actions.js");
 
 var Stores = {
   dna: new DnaStore()

@@ -18,7 +18,7 @@ module.exports = {
 
   debug: false,
   devtool: false,
-  entry: "./src/client/boot.jsx",
+  entry: "./src/client/boot.js",
 
   stats: {
     colors: true,
@@ -53,11 +53,7 @@ module.exports = {
     }],
 
     loaders: [{
-      test: /\.js$/,
-      loader: "babel",
-      exclude: /node_modules/
-    }, {
-      test: /\.jsx$/,
+      test: /\.js[x]?$/,
       loader: "babel",
       exclude: /node_modules/
     }]

@@ -8,8 +8,8 @@
   "mainInput": "dna",
   "mainOutput": "dna",
   "scripts": {
-    "start": "supervisor -w src/server,src/lib -e js,jsx,ejs,json src/server/boot.js",
-    "start-debug": "supervisor --debug -w src/server,src/lib -e js,jsx,ejs,json src/server/boot.js"
+    "start": "supervisor -w src/server,src/lib -e js,ejs,json src/server/boot.js",
+    "start-debug": "supervisor --debug -w src/server,src/lib -e js,ejs,json src/server/boot.js"
   },
   "dependencies": {
     "babel": "^4.7.16",
