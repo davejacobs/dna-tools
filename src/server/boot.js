@@ -77,7 +77,7 @@ if (app.get("env") === "development") {
 
 var port = process.env.PORT || 3001;
 app.listen(port);
-console.log(`Express server is listening on port ${port}`);
+console.log("Express server is listening on port " + port);
 
 // Run asset server
 if (app.get("env") === "development") {
