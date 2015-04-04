@@ -1,27 +1,3 @@
-// var Promise = require("promise"),
-//     request = require("superagent");
-//
-// function resolveOrReject(resolve, reject) {
-//   return function (resp) {
-//     if (resp.statusType === 2 || resp.statusType === 3) {
-//       resolve(resp.body);
-//     } else {
-//       reject(resp);
-//     }
-//   };
-// }
-
-// module.exports = {
-//   loadDnaCollection(search) {
-//     return new Promise((resolve, reject) => {
-//       request.get("/api/dna").
-//         query({ search: search }).
-//         set("Accept", "application/json").
-//         end(resolveOrReject(resolve, reject));
-//     })
-//   }
-// }
-
 var _ = require("underscore"),
     request = require("superagent"),
     Promise = require("promise"),
