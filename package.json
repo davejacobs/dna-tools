@@ -50,10 +50,10 @@
     "load-grunt-tasks": "~0.4.0",
     "node-sass": "0.8.0",
     "regenerator": "^0.8.17",
-    "supervisor": "^0.6.0",
-    "webpack": "~1.7.3",
-    "webpack-dev-server": "^1.7.0"
+    "webpack": "~1.7.3"
   },
   "devDependencies": {
+    "supervisor": "^0.6.0",
+    "webpack-dev-server": "^1.7.0"
   }
 }
