@@ -1,11 +1,10 @@
-var React = require("react"),
-    { Route, DefaultRoute } = require("react-router"),
-    App = require("./app.js");
+var { Route, DefaultRoute } = require("react-router"),
+    { OneColumnLayout } = require("./layouts"),
+    { SearchPage } = require("./dna");
 
 module.exports = (
-  <Route handler={App.OneColumnLayout} path="/">
-    <DefaultRoute handler={App.SearchPage} />
-    <Route name="search" path="/search" handler={App.SearchPage} />
+  <Route handler={OneColumnLayout} path="/">
+    <DefaultRoute handler={SearchPage} />
+    <Route name="search" path="/search" handler={SearchPage} />
   </Route>
 );
-

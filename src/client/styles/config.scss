@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700&subset=latin);
+
+$bp-size: 30px;
+$bp-border-width: 3px;
+
+$color-1: rgb(114, 191, 118);
+$color-2: rgb(114, 190, 191);
+$color-3: rgb(157, 191, 114);
+$color-4: rgb(177, 114, 191);
+
+$serif-font-family: Vollkorn, serif;
+$sans-font-family: Ubuntu, sans;
+
+$light-gray: #eee;
+
+@function quiet($color) {
+  @return $color + #333;
+}
+
+@function loud($color) {
+  @return $color - #333;
+}

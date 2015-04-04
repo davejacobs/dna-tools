@@ -4,7 +4,6 @@ var _ = require("underscore"),
     Fluxxor = require("fluxxor"),
     FluxMixin = Fluxxor.FluxMixin(React),
     StoreWatchMixin = Fluxxor.StoreWatchMixin,
-    { RouteHandler } = require("react-router"),
     { Spinner } = require("./spinners");
 
 var Nucleotide = React.createClass({
@@ -158,14 +157,3 @@ exports.SearchPage = React.createClass({
     }
   }
 });
-
-exports.OneColumnLayout = React.createClass({
-  render() {
-    return (
-      <div className="one-column-layout">
-        <RouteHandler {...this.props} />
-      </div>
-    );
-  }
-});
-
