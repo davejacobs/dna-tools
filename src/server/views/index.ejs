@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge,chrome=1" />
+    <title><%= title %></title>
+    <meta name="description" content="" />
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0,
+                   maximum-scale=1.0,
+                   user-scalable=no" />
+    <link href="/favicon.ico" 
+          rel="icon" 
+          type="image/png" />
+
+    <% if (env == "production") { %>
+      <link rel="stylesheet" href="/assets/styles/screen.css?<%= hash %>" />
+    <% } else { %>
+      <link rel="stylesheet" href="/assets/styles/screen.css" />
+    <% } %>
+  </head>
+
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong>
+        browser. Please <a href="http://browsehappy.com/">
+        upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <% if (env == "production") { %>
+      <script type="text/javascript" src="/assets/javascripts/<%= hash %>.boot.js">
+      </script>
+    <% } else { %>
+      <script type="text/javascript" src="/assets/javascripts/boot.js">
+      </script>
+    <% } %>
+  </body>
+</html>

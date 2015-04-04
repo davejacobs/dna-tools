@@ -1,0 +1,5 @@
+npm-debug.log
+node_modules/
+src/javascripts/boot.js
+src/client/public/styles/screen.css
+src/client/public/styles/screen.css.map

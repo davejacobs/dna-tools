@@ -1,0 +1,112 @@
+@import url(http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700&subset=latin);
+
+$bp-size: 30px;
+$bp-border-width: 3px;
+
+$color-1: rgb(114, 191, 118);
+$color-2: rgb(114, 190, 191);
+$color-3: rgb(157, 191, 114);
+$color-4: rgb(177, 114, 191);
+
+$serif-font-family: Vollkorn, serif;
+
+$light-gray: #eee;
+
+@function quiet($color) {
+  @return $color + #333;
+}
+
+@function loud($color) {
+  @return $color - #333;
+}
+
+.search-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+  background: url(/assets/images/geometry.png) repeat;
+
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+
+    .message {
+      margin-top: 20px;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: Ubuntu, sans;
+    }
+  }
+
+  h2.curly-signature {
+    // font-family: $serif-font-family;
+    text-transform: uppercase;
+    font-size: 130%;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-top: solid 1px #bbb;
+    border-bottom: solid 1px #bbb;
+
+    background-color: rgba(10, 10, 10, 0.8);
+    color: #fff;
+  }
+
+  .search-box {
+    padding: 10px;
+
+    input {
+      width: 50%;
+    }
+
+    &.alone {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .search-results {
+    padding: 10px;
+    flex: 1;
+
+    font-family: "Ubuntu";
+
+    list-style-type: none;
+    padding: 10px;
+
+    .search-result {
+      padding: 10px;
+
+      .sequence {
+        list-style-type: none;
+        // font-family: "Ubuntu Mono", mono;
+        .nucleotide, .nucleotide-placeholder {
+          display: inline-block;
+          padding: 2px;
+          text-transform: uppercase;
+        }
+      }
+
+      .lineage {
+        &> li {
+          display: inline-block;
+          margin-left: 5px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.one-column-layout {
+  flex: 1;
+  display: flex;
+}
