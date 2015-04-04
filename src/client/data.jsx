@@ -186,30 +186,12 @@ module.exports = {
   },
 
   loadDnaCollection(search) {
-    // var cacheDetails;
-
     return this.loadGenesFromSearch(search).then((cacheInfo) => {
-      // cacheDetails = cacheInfo;
-
       return this.loadGeneMetadata({
         cacheInfo: cacheInfo,
         search: search
       });
     });
-    // .then((metadataColl) => {
-    //   return metadataColl.map((metadata) => {
-    //     // _.extend(metadata, {
-    //     //   webenv: cacheDetails.esearchresult.webenv,
-    //     //   query_key: cacheDetails.esearchresult.querykey
-    //     // });
-    //
-    //     return this.loadGeneSequence(metadata).then((sequence) => { 
-    //       return _.extend({}, metadata, { sequence: sequence }); 
-    //     });
-    //   });
-    // }).then((reqs) => {
-    //   return Promise.all(reqs);
-    // });
   }
 };
 
