@@ -4,20 +4,8 @@ var _ = require("underscore"),
     Fluxxor = require("fluxxor"),
     FluxMixin = Fluxxor.FluxMixin(React),
     StoreWatchMixin = Fluxxor.StoreWatchMixin,
-    { RouteHandler } = require("react-router");
-
-var Spinner = React.createClass({
-  render() {
-    var message = this.props.message ? <p className="message">{this.props.message}</p> : null;
-
-    return (
-      <div className="spinner">
-        <img src="/assets/images/spinner.svg" />
-        {message}
-      </div>
-    );
-  }
-});
+    { RouteHandler } = require("react-router"),
+    { Spinner } = require("./spinners");
 
 var Nucleotide = React.createClass({
   render() {
@@ -46,7 +34,7 @@ var SearchResult = React.createClass({
     if (id && seq_start && seq_stop) {
       return (
         <li className="search-result">
-          <h5 className="title">{geneName} – {taxName}</h5> 
+          <h5 className="title">{geneName} – {taxName}</h5>
           <h6>Encodes {proteinName}</h6>
 
           <div className="metadata">
@@ -104,7 +92,7 @@ var SearchBox = React.createClass({
         <input name="search"
                value={this.state.search}
                placeholder="Gene Name"
-               onChange={this.onChangeSearch} />        
+               onChange={this.onChangeSearch} />
       </form>
     );
   },
