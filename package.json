@@ -10,6 +10,7 @@
   "scripts": {
     "start": "supervisor -w src/server,src/lib -e js,ejs,json src/server/boot.js",
     "start-debug": "supervisor --debug -w src/server,src/lib -e js,ejs,json src/server/boot.js",
+    "preinstall": "npm install -g grunt-cli",
     "postinstall": "npm run build",
     "build": "grunt build"
   },
