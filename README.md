@@ -9,10 +9,6 @@ An experimental set of tools for cloning and analyzing DNA sequences.
     npm install
     npm start
 
-### Demo ###
-
-See a demo [on Heroku](http://dna-tools.herokuapp.com/).
-
 ### Up next ###
 
 - [ ] Primer design
