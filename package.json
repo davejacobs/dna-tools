@@ -59,5 +59,9 @@
   },
   "devDependencies": {
     "webpack-dev-server": "^1.7.0"
+  },
+  "engines": {
+    "node": "5.x.x",
+    "npm": "3.x.x"
   }
 }
