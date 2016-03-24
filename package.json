@@ -8,7 +8,8 @@
   "mainInput": "dna",
   "mainOutput": "dna",
   "engines": {
-    "node": "0.10.x"
+    "node": "5.x.x",
+    "npm": "3.x.x"
   },
   "scripts": {
     "start": "supervisor -w src/server,src/lib -e js,ejs,json src/server/boot.js",
@@ -18,30 +19,15 @@
   },
   "dependencies": {
     "babel": "^4.7.16",
+    "babel-loader": "^5.0.0",
     "body-parser": "~1.0.0",
     "compression": "^1.3.0",
     "ecstatic": "^0.5.8",
     "ejs": "^2.0.7",
+    "expand-home-dir": "0.0.3",
     "express": "^4.10.4",
     "fasta-parser": "^0.1.0",
     "fluxxor": "~1.5.0",
-    "morgan": "^1.5.1",
-    "promise": "^5.0.0",
-    "proxy-middleware": "^0.6.0",
-    "purecss": "^0.6.0",
-    "react": "^0.13.1",
-    "react-document-title": "^1.0.2",
-    "react-router": "^0.13.2",
-    "react-tap-event-plugin": "^0.1.4",
-    "react-widgets": "^2.0.1",
-    "superagent": "~0.18.2",
-    "underscore": "~1.6.0",
-    "url": "^0.10.3",
-    "xmldom": "^0.1.19",
-    "xpath": "0.0.9",
-
-    "babel-loader": "^5.0.0",
-    "expand-home-dir": "0.0.3",
     "foreman": "^1.3.0",
     "fs": "0.0.2",
     "grunt": "~0.4.4",
@@ -52,16 +38,26 @@
     "grunt-ssh-deploy": "^0.2.2",
     "grunt-webpack": "~1.0.8",
     "load-grunt-tasks": "~0.4.0",
-    "node-sass": "2.0.1",
+    "morgan": "^1.5.1",
+    "node-sass": "^3.4.2",
+    "promise": "^5.0.0",
+    "proxy-middleware": "^0.6.0",
+    "purecss": "^0.6.0",
+    "react": "^0.13.1",
+    "react-document-title": "^1.0.2",
+    "react-router": "^0.13.2",
+    "react-tap-event-plugin": "^0.1.4",
+    "react-widgets": "^2.0.1",
     "regenerator": "^0.8.17",
+    "superagent": "~0.18.2",
+    "supervisor": "^0.6.0",
+    "underscore": "~1.6.0",
+    "url": "^0.10.3",
     "webpack": "~1.7.3",
-    "supervisor": "^0.6.0"
+    "xmldom": "^0.1.19",
+    "xpath": "0.0.9"
   },
   "devDependencies": {
     "webpack-dev-server": "^1.7.0"
-  },
-  "engines": {
-    "node": "5.x.x",
-    "npm": "3.x.x"
   }
 }
